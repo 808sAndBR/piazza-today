@@ -6,4 +6,4 @@ sched = BlockingScheduler()
 def scheduled_job():
     #import the scraping file and run it here
 
-sched.start()
+    sched.start()
