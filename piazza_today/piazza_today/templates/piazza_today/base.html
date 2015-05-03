@@ -1,0 +1,21 @@
+{% load staticfiles %}
+
+<html>
+    <head>
+    	<title> Teamfit </title>
+            <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+            <link rel="stylesheet" href="{% static 'css/piazza_today.css' %}">
+            <script src="{% static 'js/jquery.js' %}"></script>
+            <script src="{% static 'js/bootstrap.min.js' %}"></script>
+            <script src="{% static 'js/bootstrap.js' %}"></script>
+            <script src="{% static 'js/piazza_today.js' %}"></script>
+    	    
+    </head>
+
+    <body>
+		<h1>hello world</h1>
+
+		{% block content %}
+		{% endblock %}
+	</body>
+</html>
