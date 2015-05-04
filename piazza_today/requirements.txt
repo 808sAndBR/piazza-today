@@ -1,0 +1,20 @@
+<<<<<<< HEAD
+dj-database-url==0.3.0
+Django==1.7.3
+waitress==0.8.9
+whitenoise==1.0.6
+psycopg2==2.5.4
+gunicorn==19.2.1
+Pillow==2.7.0
+=======
+APScheduler==3.0.0
+beautifulsoup4==4.3.2
+dj-database-url==0.3.0
+Django==1.7.3
+gunicorn==19.2.1
+psycopg2==2.5.4
+Pillow==2.7.0
+requests==2.5.1
+waitress==0.8.9
+whitenoise==1.0.6
+>>>>>>> 12ac29542bead9f3a893f6d87f212c8d6f278e5d

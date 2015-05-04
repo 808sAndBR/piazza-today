@@ -1,0 +1,6 @@
+<<<<<<< HEAD
+web: gunicorn mysite.wsgi
+=======
+web: gunicorn mysite.wsgi
+clock: python clock.py
+>>>>>>> 12ac29542bead9f3a893f6d87f212c8d6f278e5d
