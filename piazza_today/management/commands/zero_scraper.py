@@ -15,5 +15,11 @@ def menu_scrape():
         menu_info(today_soup)
 
 def menu_info(days_soup):
-    #should be able to start pulling data diretly with days_soup.find_all("div", { "class" : "item-name" })
-    #and days_soup.find_all("div", { "class" : "vendor-name"}
+    days_soup.find("h1", { "class" : "vendor-name"}
+    food_items = []
+    food_items_soup = BeautifulSoup(str(days_soup.find_all("h4", { "class" : "item-name" })))
+    for yummy in food_items_soup.stripped_strings:
+        if yummy != "," and yummy != "[" and yummy != "]":
+            food_items.append(yummy)
+
+
