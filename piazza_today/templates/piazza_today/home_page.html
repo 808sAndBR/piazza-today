@@ -1,8 +1,37 @@
 {% extends "piazza_today/base.html" %}
 
 {% block content %}
-	<p id = "js_test">Hi Jolly Mohnson</p>
-	<p id = "js_test">Hi Scott :)</p>
-	<button onclick="javascript:display()">Display</button>
+	<div class="topbar">
+		<h1>The Daily Prophet</h1>
+	</div>
+	<div class="main_content_container">
+		<div class="section_wrapper top">
+			<div class="date_wrapper clearfix">
+				<div class="time">Palo Alto: 1:04pm</div>
+				<div class="date">Monday, May 4th</div>
+				<div class="time">Latvia: 12:00am</div>
+			</div>
+			<div class="food_boxes_wrapper">
+				<div class="food_box"></div>
+				<div class="food_box"></div>
+			</div>
+		</div>
+		<div class="section_wrapper middle">
+			<div class="festivities_wrapper">
+				<div class="festivity_box"></div>
+				<div class="festivity_box"></div>
+				<div class="festivity_box"></div>
+				<div class="festivity_box"></div>
+				<div class="festivity_box"></div>
+			</div>
+		</div>
+		<div class="section_wrapper bottom">
+			<div class="announcements_wrapper">
+				<div class="announcement_box"></div>
+				<div class="announcement_box"></div>
+				<div class="announcement_box"></div>
+			</div>
+		</div>
+	</div>
 
 {% endblock content %}

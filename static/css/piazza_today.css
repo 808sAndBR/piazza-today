@@ -1,3 +1,21 @@
-h1{
-	color: yellow;
+.topbar {
+  background: #38b2a6;
+  padding: 20px;
+}
+h1 {
+  margin: 0px;
+  text-align: center;
+  color: #eee;
+}
+.section_wrapper.top {
+  width: 100%;
+}
+.section_wrapper.top .date_wrapper {
+  padding: 20px;
+}
+.section_wrapper.top .date_wrapper .time {
+  float: left;
+}
+.section_wrapper.top .date_wrapper .date {
+  float: left;
 }
