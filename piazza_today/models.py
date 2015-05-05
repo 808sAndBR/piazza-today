@@ -27,8 +27,8 @@ class Offline(models.Model):
 
 class UserProfile(models.Model):
     user = models.OneToOneField(User)
-    birthdate = models.DateField()
-    aniversery = models.DateField(default=date.today)
+    birthdate = models.DateField(blank=True, null=True)
+    aniversery = models.DateField(default=date.today, blank=True, null=True)
 
     def __str__(self):
         return self.person.first_name
