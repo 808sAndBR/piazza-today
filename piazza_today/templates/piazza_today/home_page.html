@@ -62,7 +62,7 @@
 					<p class="section_header">FESTIVITIES</p>
 					{% for event in events %}
 						<div class="box festivity_box {{event.event_type}}_image">
-						<p class="festivity_header">{{event.event_date}}</p>
+						<p class="festivity_header">{{event.event_date|date:"n/j"}}</p>
 						<p>{{event.event_name}}</p>
 					</div>
 					{% endfor %}
@@ -80,7 +80,7 @@
 						<p class="header">OUT OF OFFICE</p>
 						<ul>
 							{% for ooo in vacation %}
-							<li>{{ooo}}: {{ooo.date_leaving}} - {{ooo.date_returning}}</li>
+							<li>{{ooo}}: {{ooo.date_leaving|date:"n/j"}} - {{ooo.date_returning|date:"n/j"}}</li>
 							{% endfor%}
 						</ul>
 					</div>
