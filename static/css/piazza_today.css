@@ -1,41 +1,26 @@
-h1 {
-  margin: 0px;
-  text-align: center;
-  color: #fff;
-  font-size: 60px;
-}
 body {
   background: #F0E8E6;
 }
-p {
+.section_header {
+  color: #7CC1FA;
   text-align: center;
-  font-weight: 400;
-  font-size: 25px;
-  color: #fff;
-}
-p.restaurant {
-  text-align: left;
-  font-weight: 800;
-  color: #fff;
-  font-size: 15px;
-  margin-bottom: 5px;
+  font-size: 32px;
 }
 .spacer {
   background: #726965;
   width: 100%;
   height: 50px;
 }
-.main_content_container {
-  background-image: url('../img/piazza6.gif');
-  background-size: 100%;
-  background-repeat: no-repeat;
+.box {
+  border-radius: 10px;
+  background: #303030;
+  padding: 15px;
+  float: left;
+  margin: 0px 10px;
 }
-.main_content_wrapper {
-  width: 70%;
-  margin: 7% 15%;
-  height: 100%;
-  background: #272727;
-  opacity: .9;
+p {
+  color: #fff;
+  text-align: center;
 }
 .topbar {
   height: 95px;
@@ -44,138 +29,115 @@ p.restaurant {
   background-image: url('../img/daily_prophet.png');
   background-repeat: no-repeat;
   background-size: auto 50px;
-  background-position: 4% 10%;
+  background-position: 50px 5px;
 }
-.date_wrapper {
+.topbar .date_wrapper {
   color: #fff;
   float: right;
-  width: 62%;
+  width: 900px;
 }
-.date_wrapper .date_info {
+.topbar .date_wrapper .date_info {
   float: left;
   font-size: 18px;
   font-weight: bold;
-  margin-right: 8%;
-  margin-top: 1%;
+  margin-right: 100px;
+  margin-top: 10px;
+}
+.main_content_container {
+  background-image: url('../img/piazza6.gif');
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.main_content_wrapper {
+  width: 1000px;
+  margin: 100px auto;
+  background: #272727;
+  opacity: .9;
 }
 .section_wrapper {
-  width: 100%;
-  padding: 2% 9%;
+  padding: 15px 60px;
 }
-.section_wrapper.top .food_boxes_wrapper {
+.food_boxes_wrapper {
   margin-top: 35px;
 }
-.section_wrapper.top .food_boxes_wrapper .food_box {
-  width: 48%;
-  background: #303030;
-  float: left;
-  margin: 0% 1%;
+.food_boxes_wrapper .food_box {
+  width: 420px;
   height: 310px;
-  padding: 2%;
-  border-radius: 10px;
 }
-.section_wrapper.top .food_boxes_wrapper .food_box ul {
-  padding-left: 15px;
+.food_boxes_wrapper .food_box ul {
+  padding-left: 20px;
   color: #fff;
   font-size: 15px;
 }
-.section_wrapper.top .food_boxes_wrapper .food_box p {
-  color: #7CC1FA;
-  font-size: 32px;
-}
-.section_wrapper.top .food_boxes_wrapper .food_box p.restaurant {
+.food_boxes_wrapper .food_box .restaurant {
   color: #fff;
+  font-weight: 800;
   font-size: 18px;
+  margin-bottom: 5px;
+  text-align: left;
 }
-.section_wrapper.middle .festivities_wrapper {
-  border-radius: 10px;
-  width: 100%;
+.festivities_wrapper {
   height: 300px;
-  padding: 2%;
+  padding: 20px;
 }
-.section_wrapper.middle .festivities_wrapper p {
-  color: #fff;
-}
-.section_wrapper.middle .festivities_wrapper p.festivities_header {
-  color: #7CC1FA;
-  font-size: 32px;
-}
-.section_wrapper.middle .festivities_wrapper .festivity_box {
-  border-radius: 10px;
-  margin: 0% 1%;
-  width: 18%;
-  height: 82%;
-  float: left;
-  background: #303030;
-  background-size: 41%;
-  background-position: 50% 35%;
+.festivities_wrapper .festivity_box {
+  width: 148px;
+  height: 220px;
+  background-size: 60px;
   background-repeat: no-repeat;
+  background-position: 43px 66px;
 }
-.section_wrapper.middle .festivities_wrapper .festivity_box.birthday_image {
-  background-image: url('../img/birthday_hat.png');
-  background-size: 29%;
-  background-position: 50% 30%;
+.festivities_wrapper .festivity_box.birthday_image {
+  background-image: url('../img/cake.png');
 }
-.section_wrapper.middle .festivities_wrapper .festivity_box.anniversary_image {
+.festivities_wrapper .festivity_box.anniversary_image {
   background-image: url('../img/champagne.png');
 }
-.section_wrapper.middle .festivities_wrapper .festivity_box.dinner_image {
+.festivities_wrapper .festivity_box.dinner_image {
   background-image: url('../img/hamburger.png');
 }
-.section_wrapper.middle .festivities_wrapper .festivity_box.breakfast_image {
+.festivities_wrapper .festivity_box.breakfast_image {
   background-image: url('../img/muffin.png');
 }
-.section_wrapper.middle .festivities_wrapper .festivity_box.frisbee_image {
+.festivities_wrapper .festivity_box.frisbee_image {
   background-image: url('../img/frisbee.png');
 }
-.section_wrapper.middle .festivities_wrapper .festivity_box p {
-  margin: 50% 0%;
+.festivities_wrapper .festivity_box .festivity_header {
+  margin-top: 5px;
+}
+.festivities_wrapper .festivity_box p {
   text-align: center;
-  color: #fff;
   font-size: 23px;
-  margin-top: 100px;
+  margin-top: 85px;
 }
-.section_wrapper.middle .festivities_wrapper .festivity_box p.festivity_header {
-  margin: 0%;
-  margin-top: 3%;
+.announcements_wrapper .announcement_box {
+  margin: 0px 17px;
+  width: 259px;
+  height: 230px;
 }
-.section_wrapper.bottom {
-  padding: 2% 6%;
-  padding-bottom: 50px;
-  background: #272727;
+.announcements_wrapper .announcement_box .header {
+  color: black;
+  font-size: 18px;
+  margin-top: 8px;
+  font-weight: 700;
 }
-.section_wrapper.bottom p {
-  font-size: 32px;
-  color: #7CC1FA;
-}
-.section_wrapper.bottom .announcements_wrapper .announcement_box {
-  border-radius: 10px;
-  margin: 0% 2%;
-  width: 29.3%;
-  height: 300px;
-  background: #303030;
-  float: left;
-  padding: 10px;
-}
-.section_wrapper.bottom .announcements_wrapper .announcement_box p {
-  font-size: 25px;
+.announcements_wrapper .announcement_box p {
+  font-size: 20px;
   color: black;
 }
-.section_wrapper.bottom .announcements_wrapper .announcement_box p.header {
+.announcements_wrapper .announcement_box ul {
   color: black;
-  margin: 5% 0%;
   font-size: 20px;
 }
-.section_wrapper.bottom .announcements_wrapper .announcement_box ul {
-  color: black;
-  font-size: 25px;
-}
-.section_wrapper.bottom .announcements_wrapper .announcement_box.out_office {
+.announcements_wrapper .announcement_box.out_office {
   background: #CFFDC3;
 }
-.section_wrapper.bottom .announcements_wrapper .announcement_box.snitch {
+.announcements_wrapper .announcement_box.snitch {
   background: #FDF0BB;
 }
-.section_wrapper.bottom .announcements_wrapper .announcement_box.time_turner {
+.announcements_wrapper .announcement_box.time_turner {
   background: #AFDEFF;
+}
+.bottom {
+  padding-bottom: 50px;
 }
