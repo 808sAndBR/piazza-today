@@ -19,5 +19,28 @@
 	{% for food in dinner_food %}
 		{{food}}
 	{% endfor %}
+
+	{{snitch}}
+	<br>
+	{{snitch.email_name}}
+	<br>
+	{% for ooo in vacation %}
+		{{ooo}}
+		{{ooo.date_leaving}}
+		{{ooo.date_returning}}
+		<br>
+	{% endfor%}
+	<br>
+	{{gamenight_winner}}
+	{{gamenight_winner.catagory}}
+
+	<br>
+	{% for event in events %}
+	<br>
+		{{event.event_date}}
+		{{event.event_name}}
+		{{event.event_type}}
+	{% endfor %}
+
 {% endblock content %}
 

@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
+from datetime import date, datetime
 
 class Meal(models.Model):
     meal = models.CharField(max_length = 200)
@@ -18,11 +19,50 @@ class Food(models.Model):
 
 class Offline(models.Model):
     person = models.ForeignKey(User)
-    date_leaving = models.DateField()
-    date_returning = models.DateField()
+    date_leaving = models.DateField(default=date.today)
+    date_returning = models.DateField(default=date.today)
+    
+    def __str__(self):
+        return self.person.first_name
+
+class UserProfile(models.Model):
+    user = models.OneToOneField(User)
+    birthdate = models.DateField()
+    aniversery = models.DateField(default=date.today)
+
+    def __str__(self):
+        return self.person.first_name
 
 class Snitch(models.Model):
-    pass
+    person = models.ForeignKey(User)
+    win_date = models.DateField(default=date.today)
+    email_name = models.CharField(max_length = 200)
+
+    def __str__(self):
+        return self.person.first_name
 
 class Gamenight(models.Model):
+    person = models.ForeignKey(User)
+    win_date = models.DateField(default=date.today)
     catagory = models.CharField(max_length = 200)
+
+    def __str__(self):
+        return self.person.first_name
+
+class EventType(models.Model):
+    celibration = models.CharField(max_length = 200)
+
+    def __str__(self):
+            return self.celibration
+
+class TeamEvent(models.Model):
+    event_name = models.CharField(max_length = 200)
+    event_date = models.DateField(default=date.today)
+    start_time = models.TimeField(default=datetime.now().time())
+    end_time = models.TimeField(default=datetime.now().time())
+    created_by = models.ForeignKey('auth.User')
+    event_type = models.ForeignKey(EventType)
+
+    def __str__(self):
+            return self.event_name
+        
