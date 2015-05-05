@@ -57,23 +57,37 @@
 					</div>
 				</div>
 			</div>
+			<div class="section_wrapper clearfix">
+				<div class="festivities_wrapper clearfix">
+					<p class="section_header">FESTIVITIES</p>
+					{% for event in events %}
+						<div class="box festivity_box {{event.event_type}}_image">
+						<p class="festivity_header">{{event.event_date}}</p>
+						<p>{{event.event_name}}</p>
+					</div>
+					{% endfor %}
+				</div>
+			</div>
 			<div class="section_wrapper bottom clearfix">
 				<p class="section_header">ANNOUNCEMENTS</p>
 				<div class="announcements_wrapper">
 					<div class="box announcement_box snitch">
 						<p class="header">GOLDEN SNITCH CHAMP</p>
-						<p>SCOTT</p>
+						<p>{{snitch}}</p>
+						<p>{{snitch.email_name}}</p>
 					</div>
 					<div class="box announcement_box out_office">
 						<p class="header">OUT OF OFFICE</p>
 						<ul>
-							<li>Molly: 5/4 - 7/8</li>
-							<li>Tony: 5/4</li>
+							{% for ooo in vacation %}
+							<li>{{ooo}}: {{ooo.date_leaving}} - {{ooo.date_returning}}</li>
+							{% endfor%}
 						</ul>
 					</div>
 					<div class="box announcement_box time_turner">
 						<p class="header">GAME NIGHT WINNER</p>
-						<p>MOLLY</p>
+						<p>{{gamenight_winner}}</p>
+						<p>{{gamenight_winner.catagory}}</p>
 					</div>
 				</div>
 			</div>
