@@ -1,121 +1,194 @@
 h1{
 	margin:0px;
 	text-align:center;
-	color: #5073CB;
-	font-size: 65px;
+	color: #fff;
+	font-size: 60px;
+}
+body{
+	background: #F0E8E6;
 }
 p{
 	text-align: center;
 	font-weight: 400;
-	font-size: 22px;
-	color: #829DDF;
+	font-size: 25px;
+	color: #fff;
+	&.restaurant{
+		text-align: left;
+		font-weight: 800;
+		color: #fff;
+		font-size: 15px;
+		margin-bottom: 5px;
+	}
 }
-body{
-	background-image: url('../img/piazza5.jpg');
+.spacer{
+	background: #726965;
+	width: 100%;
+	height: 50px;
+}
+.main_content_container{
+	background-image: url('../img/piazza6.gif');
 	background-size: 100%;
 	background-repeat: no-repeat;
 }
+.main_content_wrapper{
+	width: 70%;
+	margin: 7% 15%;
+	height: 100%;
+	background: #272727;
+	opacity: .9;
+}
 .topbar{
-	padding:1.5%;
+	height: 95px;
+	width: 100%;
+	padding: 8px;
+	background-image: url('../img/daily_prophet.png');
+	background-repeat: no-repeat;
+	background-size: auto 50px;
+  	background-position: 4% 10%;
 }
 .date_wrapper{
-	padding: 1%;
-	text-align: center;
 	color: #fff;
-	.time{
+	float: right;
+	width: 62%;
+	.date_info{
 		float: left;
-		width: 20%;
-		font-size: 24px;
-	}
-	.date{
-		float: left;
-		width: 58%;
-		font-size: 40px;
+		font-size: 18px;
+		font-weight: bold;
+		margin-right: 8%;
+		margin-top: 1%;
 	}
 }
 .section_wrapper{
 	width: 100%;
-	padding: 2% 15%;
+	padding: 1% 9%;
 	&.top{
 		.food_boxes_wrapper{
-			opacity: .9;
 			.food_box{
-				width: 42%;
-				background: #eee;
+				width: 48%;
+				background: #303030;
 				float: left;
-				margin: 0% 4%;
-				height: 280px;
+				margin: 0% 1%;
+				height: 310px;
 				padding: 2%;
+				border-radius: 10px;
 				ul{
 					padding-left: 15px;
+					color: #fff;
+					font-size: 15px;
+				}
+				p{
+					color: #5CFAA0;
+					font-size: 32px;
+					&.restaurant{
+						color: #fff;
+						font-size: 18px;
+					}
 				}
 			}
 		}
 	}
 	&.middle{
 		.festivities_wrapper{
-			opacity: .9;
+			border-radius: 10px;
 			width: 100%;
-			background: #387BC2;
 			height: 300px;
 			padding: 2%;
 			p{
-				color: #fff;	
+				color: #fff;
+				&.festivities_header{
+					color: #7CC1FA;
+					font-size: 32px;
+				}	
 			}
 			.festivity_box{
+				border-radius: 10px;
 				margin: 0% 1%;
 				width: 18%;
-				background: #fff;
 				height: 82%;
 				float: left;
+				background: #303030;
+				background-size: 41%;
+  				background-position: 50% 35%;
+				background-repeat: no-repeat;
+				&.birthday_image{
+					background-image: url('../img/birthday_hat.png');
+					background-size: 29%;
+					background-position: 50% 30%;
+				}
+				&.anniversary_image{
+					background-image: url('../img/champagne.png')
+				}
+				&.dinner_image{
+					background-image: url('../img/hamburger.png')
+				}
+				&.breakfast_image{
+					background-image: url('../img/muffin.png')
+				}
+				&.frisbee_image{
+					background-image: url('../img/frisbee.png')
+				}
+				p{
+					margin: 50% 0%;
+  					text-align: center;
+					color: #fff;
+					font-size: 23px;
+					margin-top: 100px;
+					&.festivity_header{
+						margin: 0%;
+						margin-top: 3%;
+					}
+				}
 			}
 		}
 	}
 	&.bottom{
 		padding: 2% 12%;
-		background: #edefed;
+		padding-bottom: 50px;
+		background: #272727;
+		p{
+			font-size: 32px;
+			color: #FDAB9C;
+		}
 		.announcements_wrapper{
 			.announcement_box{
 				margin: 0% 2%;
 				width: 29.3%;
 				height: 300px;
+				background: #303030;
 				float: left;
 				p{
 					font-size: 40px;
+					color: black;
 					&.header{
-						color: #fff;
+						color: black;
 						margin: 5% 0%;
 						font-size: 24px;
 					}
-					&.g_s{
-						color: #9BFDAF;
-					}
-					&.g_n{
-						color: #E5B9FF;
-					}
 				}
 				ul{
-					color: #A8E2FC;
-					font-size: 25px;
+					color: black;
+					font-size: 30px;
 					list-style: none;
 				}
 				&.out_office{
-					background-image: url('http://blogs-images.forbes.com/adamhartung/files/2014/08/Tropical-Vacation.jpg');
+					background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeWlXGuNPdsy98GF_cayeVJevax_grK_mJo0kYEB-Dp1ZqIYneqg');
 					background-repeat: no-repeat;
+					background-size: 100% 300px;
 				}
 				&.snitch{
-					background-image: url('http://d2tq98mqfjyz2l.cloudfront.net/image_cache/1265084535785329.jpeg');
+					background-image: url('https://www.shapeways.com/wordpress/wp-content/uploads/2013/09/674x501_1227558_1245755_1377613915.jpg');
 					background-repeat: no-repeat;
+					background-size: 100% 300px;
 				}
 				&.time_turner{
-					background-image: url('http://images.forwallpaper.com/files/thumbs/preview/45/457887__harry-potter-the-time-turner_p.jpg');
+					background-image: url('http://www.nerdlikeyou.com/wp-content/uploads/2014/01/harry-potter-hermione-grangers-time-turner.jpg');
 					background-repeat: no-repeat;
+					background-size: 100% 300px;
 				}
 			}
 		}
 	}
 }
-
 
 
 

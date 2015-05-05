@@ -1,111 +1,183 @@
 h1 {
   margin: 0px;
   text-align: center;
-  color: #5073CB;
-  font-size: 65px;
+  color: #fff;
+  font-size: 60px;
+}
+body {
+  background: #F0E8E6;
 }
 p {
   text-align: center;
   font-weight: 400;
-  font-size: 22px;
-  color: #829DDF;
+  font-size: 25px;
+  color: #fff;
 }
-body {
-  background-image: url('../img/piazza5.jpg');
+p.restaurant {
+  text-align: left;
+  font-weight: 800;
+  color: #fff;
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+.spacer {
+  background: #726965;
+  width: 100%;
+  height: 50px;
+}
+.main_content_container {
+  background-image: url('../img/piazza6.gif');
   background-size: 100%;
   background-repeat: no-repeat;
 }
+.main_content_wrapper {
+  width: 70%;
+  margin: 7% 15%;
+  height: 100%;
+  background: #272727;
+  opacity: .9;
+}
 .topbar {
-  padding: 1.5%;
+  height: 95px;
+  width: 100%;
+  padding: 8px;
+  background-image: url('../img/daily_prophet.png');
+  background-repeat: no-repeat;
+  background-size: auto 50px;
+  background-position: 4% 10%;
 }
 .date_wrapper {
-  padding: 1%;
-  text-align: center;
   color: #fff;
+  float: right;
+  width: 62%;
 }
-.date_wrapper .time {
+.date_wrapper .date_info {
   float: left;
-  width: 20%;
-  font-size: 24px;
-}
-.date_wrapper .date {
-  float: left;
-  width: 58%;
-  font-size: 40px;
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 8%;
+  margin-top: 1%;
 }
 .section_wrapper {
   width: 100%;
-  padding: 2% 15%;
-}
-.section_wrapper.top .food_boxes_wrapper {
-  opacity: .9;
+  padding: 1% 9%;
 }
 .section_wrapper.top .food_boxes_wrapper .food_box {
-  width: 42%;
-  background: #eee;
+  width: 48%;
+  background: #303030;
   float: left;
-  margin: 0% 4%;
-  height: 280px;
+  margin: 0% 1%;
+  height: 310px;
   padding: 2%;
+  border-radius: 10px;
 }
 .section_wrapper.top .food_boxes_wrapper .food_box ul {
   padding-left: 15px;
+  color: #fff;
+  font-size: 15px;
+}
+.section_wrapper.top .food_boxes_wrapper .food_box p {
+  color: #5CFAA0;
+  font-size: 32px;
+}
+.section_wrapper.top .food_boxes_wrapper .food_box p.restaurant {
+  color: #fff;
+  font-size: 18px;
 }
 .section_wrapper.middle .festivities_wrapper {
-  opacity: .9;
+  border-radius: 10px;
   width: 100%;
-  background: #387BC2;
   height: 300px;
   padding: 2%;
 }
 .section_wrapper.middle .festivities_wrapper p {
   color: #fff;
 }
+.section_wrapper.middle .festivities_wrapper p.festivities_header {
+  color: #7CC1FA;
+  font-size: 32px;
+}
 .section_wrapper.middle .festivities_wrapper .festivity_box {
+  border-radius: 10px;
   margin: 0% 1%;
   width: 18%;
-  background: #fff;
   height: 82%;
   float: left;
+  background: #303030;
+  background-size: 41%;
+  background-position: 50% 35%;
+  background-repeat: no-repeat;
+}
+.section_wrapper.middle .festivities_wrapper .festivity_box.birthday_image {
+  background-image: url('../img/birthday_hat.png');
+  background-size: 29%;
+  background-position: 50% 30%;
+}
+.section_wrapper.middle .festivities_wrapper .festivity_box.anniversary_image {
+  background-image: url('../img/champagne.png');
+}
+.section_wrapper.middle .festivities_wrapper .festivity_box.dinner_image {
+  background-image: url('../img/hamburger.png');
+}
+.section_wrapper.middle .festivities_wrapper .festivity_box.breakfast_image {
+  background-image: url('../img/muffin.png');
+}
+.section_wrapper.middle .festivities_wrapper .festivity_box.frisbee_image {
+  background-image: url('../img/frisbee.png');
+}
+.section_wrapper.middle .festivities_wrapper .festivity_box p {
+  margin: 50% 0%;
+  text-align: center;
+  color: #fff;
+  font-size: 23px;
+  margin-top: 100px;
+}
+.section_wrapper.middle .festivities_wrapper .festivity_box p.festivity_header {
+  margin: 0%;
+  margin-top: 3%;
 }
 .section_wrapper.bottom {
   padding: 2% 12%;
-  background: #edefed;
+  padding-bottom: 50px;
+  background: #272727;
+}
+.section_wrapper.bottom p {
+  font-size: 32px;
+  color: #FDAB9C;
 }
 .section_wrapper.bottom .announcements_wrapper .announcement_box {
   margin: 0% 2%;
   width: 29.3%;
   height: 300px;
+  background: #303030;
   float: left;
 }
 .section_wrapper.bottom .announcements_wrapper .announcement_box p {
   font-size: 40px;
+  color: black;
 }
 .section_wrapper.bottom .announcements_wrapper .announcement_box p.header {
-  color: #fff;
+  color: black;
   margin: 5% 0%;
   font-size: 24px;
 }
-.section_wrapper.bottom .announcements_wrapper .announcement_box p.g_s {
-  color: #9BFDAF;
-}
-.section_wrapper.bottom .announcements_wrapper .announcement_box p.g_n {
-  color: #E5B9FF;
-}
 .section_wrapper.bottom .announcements_wrapper .announcement_box ul {
-  color: #A8E2FC;
-  font-size: 25px;
+  color: black;
+  font-size: 30px;
   list-style: none;
 }
 .section_wrapper.bottom .announcements_wrapper .announcement_box.out_office {
-  background-image: url('http://blogs-images.forbes.com/adamhartung/files/2014/08/Tropical-Vacation.jpg');
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeWlXGuNPdsy98GF_cayeVJevax_grK_mJo0kYEB-Dp1ZqIYneqg');
   background-repeat: no-repeat;
+  background-size: 100% 300px;
 }
 .section_wrapper.bottom .announcements_wrapper .announcement_box.snitch {
-  background-image: url('http://d2tq98mqfjyz2l.cloudfront.net/image_cache/1265084535785329.jpeg');
+  background-image: url('https://www.shapeways.com/wordpress/wp-content/uploads/2013/09/674x501_1227558_1245755_1377613915.jpg');
   background-repeat: no-repeat;
+  background-size: 100% 300px;
 }
 .section_wrapper.bottom .announcements_wrapper .announcement_box.time_turner {
-  background-image: url('http://images.forwallpaper.com/files/thumbs/preview/45/457887__harry-potter-the-time-turner_p.jpg');
+  background-image: url('http://www.nerdlikeyou.com/wp-content/uploads/2014/01/harry-potter-hermione-grangers-time-turner.jpg');
   background-repeat: no-repeat;
+  background-size: 100% 300px;
 }
