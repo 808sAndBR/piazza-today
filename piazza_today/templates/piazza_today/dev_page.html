@@ -1,0 +1,23 @@
+{% extends "piazza_today/base.html" %}
+
+{% block content %}
+	hi worlds
+	{{pa_time}}
+	{{lv_time}}
+	{{header_date}}
+
+	{% for meal in meals %}
+		{{meal.resturant}}
+	{% endfor %}
+	<br>
+	<h3>{{lunch}}</h3>
+	{% for food in lunch_food %}
+		{{food}}
+	{% endfor %}
+	<br>
+	<h3>{{dinner}}</h3>
+	{% for food in dinner_food %}
+		{{food}}
+	{% endfor %}
+{% endblock content %}
+

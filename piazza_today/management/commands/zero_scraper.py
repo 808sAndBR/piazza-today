@@ -12,8 +12,6 @@ def handle(self, *args, **options):
 
         def menu_scrape():
             d = datetime.isocalendar(date.today())
-            #this matches the format of zerocator
-            #today_match = str(d).replace(', ','-').replace('(','').replace(')','')
             today_match = date.today().isoformat()
             print today_match
             f = soup.find_all("div", {"data-date": today_match})
