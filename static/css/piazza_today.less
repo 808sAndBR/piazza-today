@@ -1,23 +1,130 @@
-.topbar{
-	background:#38b2a6;
-	padding:20px;
-}
 h1{
 	margin:0px;
 	text-align:center;
-	color:#eee;
+	color: #5073CB;
+	font-size: 65px;
+}
+p{
+	text-align: center;
+	font-weight: 400;
+	font-size: 22px;
+	color: #829DDF;
+}
+body{
+	background-image: url('../img/piazza5.jpg');
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+.topbar{
+	padding:1.5%;
+}
+.date_wrapper{
+	padding: 1%;
+	text-align: center;
+	color: #fff;
+	.time{
+		float: left;
+		width: 20%;
+		font-size: 24px;
+	}
+	.date{
+		float: left;
+		width: 58%;
+		font-size: 40px;
+	}
 }
 .section_wrapper{
+	width: 100%;
+	padding: 2% 15%;
 	&.top{
-		width: 100%;
-		.date_wrapper{
-			padding: 20px;
-			.time{
+		.food_boxes_wrapper{
+			opacity: .9;
+			.food_box{
+				width: 42%;
+				background: #eee;
 				float: left;
+				margin: 0% 4%;
+				height: 280px;
+				padding: 2%;
+				ul{
+					padding-left: 15px;
+				}
 			}
-			.date{
+		}
+	}
+	&.middle{
+		.festivities_wrapper{
+			opacity: .9;
+			width: 100%;
+			background: #387BC2;
+			height: 300px;
+			padding: 2%;
+			p{
+				color: #fff;	
+			}
+			.festivity_box{
+				margin: 0% 1%;
+				width: 18%;
+				background: #fff;
+				height: 82%;
 				float: left;
 			}
 		}
 	}
+	&.bottom{
+		padding: 2% 12%;
+		background: #edefed;
+		.announcements_wrapper{
+			.announcement_box{
+				margin: 0% 2%;
+				width: 29.3%;
+				height: 300px;
+				float: left;
+				p{
+					font-size: 40px;
+					&.header{
+						color: #fff;
+						margin: 5% 0%;
+						font-size: 24px;
+					}
+					&.g_s{
+						color: #9BFDAF;
+					}
+					&.g_n{
+						color: #E5B9FF;
+					}
+				}
+				ul{
+					color: #A8E2FC;
+					font-size: 25px;
+					list-style: none;
+				}
+				&.out_office{
+					background-image: url('http://blogs-images.forbes.com/adamhartung/files/2014/08/Tropical-Vacation.jpg');
+					background-repeat: no-repeat;
+				}
+				&.snitch{
+					background-image: url('http://d2tq98mqfjyz2l.cloudfront.net/image_cache/1265084535785329.jpeg');
+					background-repeat: no-repeat;
+				}
+				&.time_turner{
+					background-image: url('http://images.forwallpaper.com/files/thumbs/preview/45/457887__harry-potter-the-time-turner_p.jpg');
+					background-repeat: no-repeat;
+				}
+			}
+		}
+	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,21 +1,111 @@
-.topbar {
-  background: #38b2a6;
-  padding: 20px;
-}
 h1 {
   margin: 0px;
   text-align: center;
-  color: #eee;
+  color: #5073CB;
+  font-size: 65px;
 }
-.section_wrapper.top {
+p {
+  text-align: center;
+  font-weight: 400;
+  font-size: 22px;
+  color: #829DDF;
+}
+body {
+  background-image: url('../img/piazza5.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.topbar {
+  padding: 1.5%;
+}
+.date_wrapper {
+  padding: 1%;
+  text-align: center;
+  color: #fff;
+}
+.date_wrapper .time {
+  float: left;
+  width: 20%;
+  font-size: 24px;
+}
+.date_wrapper .date {
+  float: left;
+  width: 58%;
+  font-size: 40px;
+}
+.section_wrapper {
   width: 100%;
+  padding: 2% 15%;
 }
-.section_wrapper.top .date_wrapper {
-  padding: 20px;
+.section_wrapper.top .food_boxes_wrapper {
+  opacity: .9;
 }
-.section_wrapper.top .date_wrapper .time {
+.section_wrapper.top .food_boxes_wrapper .food_box {
+  width: 42%;
+  background: #eee;
+  float: left;
+  margin: 0% 4%;
+  height: 280px;
+  padding: 2%;
+}
+.section_wrapper.top .food_boxes_wrapper .food_box ul {
+  padding-left: 15px;
+}
+.section_wrapper.middle .festivities_wrapper {
+  opacity: .9;
+  width: 100%;
+  background: #387BC2;
+  height: 300px;
+  padding: 2%;
+}
+.section_wrapper.middle .festivities_wrapper p {
+  color: #fff;
+}
+.section_wrapper.middle .festivities_wrapper .festivity_box {
+  margin: 0% 1%;
+  width: 18%;
+  background: #fff;
+  height: 82%;
   float: left;
 }
-.section_wrapper.top .date_wrapper .date {
+.section_wrapper.bottom {
+  padding: 2% 12%;
+  background: #edefed;
+}
+.section_wrapper.bottom .announcements_wrapper .announcement_box {
+  margin: 0% 2%;
+  width: 29.3%;
+  height: 300px;
   float: left;
+}
+.section_wrapper.bottom .announcements_wrapper .announcement_box p {
+  font-size: 40px;
+}
+.section_wrapper.bottom .announcements_wrapper .announcement_box p.header {
+  color: #fff;
+  margin: 5% 0%;
+  font-size: 24px;
+}
+.section_wrapper.bottom .announcements_wrapper .announcement_box p.g_s {
+  color: #9BFDAF;
+}
+.section_wrapper.bottom .announcements_wrapper .announcement_box p.g_n {
+  color: #E5B9FF;
+}
+.section_wrapper.bottom .announcements_wrapper .announcement_box ul {
+  color: #A8E2FC;
+  font-size: 25px;
+  list-style: none;
+}
+.section_wrapper.bottom .announcements_wrapper .announcement_box.out_office {
+  background-image: url('http://blogs-images.forbes.com/adamhartung/files/2014/08/Tropical-Vacation.jpg');
+  background-repeat: no-repeat;
+}
+.section_wrapper.bottom .announcements_wrapper .announcement_box.snitch {
+  background-image: url('http://d2tq98mqfjyz2l.cloudfront.net/image_cache/1265084535785329.jpeg');
+  background-repeat: no-repeat;
+}
+.section_wrapper.bottom .announcements_wrapper .announcement_box.time_turner {
+  background-image: url('http://images.forwallpaper.com/files/thumbs/preview/45/457887__harry-potter-the-time-turner_p.jpg');
+  background-repeat: no-repeat;
 }
