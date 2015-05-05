@@ -86,6 +86,7 @@ p {
   background-size: 60px;
   background-repeat: no-repeat;
   background-position: 43px 66px;
+  margin-top: 10px;
 }
 .festivities_wrapper .festivity_box.birthday_image {
   background-image: url('../img/cake.png');
@@ -120,6 +121,7 @@ p {
   margin: 0px 17px;
   width: 259px;
   height: 230px;
+  margin-top: 10px;
 }
 .announcements_wrapper .announcement_box .header {
   color: black;
@@ -146,4 +148,99 @@ p {
 }
 .bottom {
   padding-bottom: 50px;
+}
+@media (max-width: 1205px) {
+  .topbar {
+    padding: 6px;
+  }
+  .topbar .date_wrapper {
+    width: 690px;
+  }
+  .topbar .date_wrapper .date_info {
+    font-size: 18px;
+    margin-right: 30px;
+  }
+}
+@media (max-width: 1015px) {
+  .spacer {
+    background: transparent;
+  }
+  .topbar .date_wrapper {
+    float: left;
+    margin-top: 52px;
+    margin-left: 41px;
+  }
+  .main_content_wrapper {
+    width: 850px;
+  }
+  .food_boxes_wrapper .food_box {
+    width: 345px;
+    height: 400px;
+  }
+}
+@media (max-width: 780px) {
+  .main_content_wrapper {
+    width: 100%;
+  }
+  .section_wrapper {
+    width: 100%;
+    padding: 0% 3%;
+  }
+  .food_boxes_wrapper .food_box {
+    width: 47%;
+    height: 430px;
+    margin-bottom: 30px;
+  }
+  .festivities_wrapper .festivity_box {
+    margin-bottom: 30px;
+  }
+  .announcements_wrapper .announcement_box {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 713px) {
+  .topbar {
+    background-position: 20px 5px;
+  }
+  .topbar .date_wrapper {
+    margin-left: 13px;
+  }
+  .topbar .date_wrapper .date_info {
+    font-size: 14px;
+  }
+  .main_content_wrapper {
+    margin: 65px auto;
+  }
+  .food_boxes_wrapper .food_box {
+    width: 80%;
+    height: 400px;
+    margin: 0px 10%;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 500px) {
+  .topbar .date_wrapper {
+    width: 300px;
+  }
+  .topbar .date_wrapper .date_info {
+    font-size: 16px;
+  }
+  .main_content_wrapper {
+    margin: 120px auto;
+  }
+  .section_wrapper {
+    width: 100%;
+    padding: 0px;
+  }
+  .food_boxes_wrapper .food_box {
+    width: 90%;
+    margin: 0px 5%;
+    margin-bottom: 20px;
+    height: 350px;
+  }
+  .announcements_wrapper .announcement_box {
+    width: 90%;
+    margin: 0px 5%;
+    margin-bottom: 50px;
+  }
 }
