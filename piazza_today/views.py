@@ -13,7 +13,7 @@ def home_page(request):
     pa_time = Clocks().pa_clock()
     lv_time = Clocks().lv_clock()
     header_date = Clocks().head_date()
-    events = TeamEvent.objects.filter(event_date__gt=date.today)[:5]
+    events = TeamEvent.objects.filter(event_date__gte=date.today).order_by('event_date')[:5]
     snitch = Snitch.objects.latest('win_date')
     vacation = Offline.objects.filter(date_returning__gte=date.today).filter(date_leaving__lte=date.today).order_by('date_returning')
     gamenight_winner = Gamenight.objects.latest('win_date')

@@ -61,9 +61,15 @@
 				<div class="festivities_wrapper clearfix">
 					<p class="section_header">FESTIVITIES</p>
 					{% for event in events %}
-						<div class="box festivity_box {{event.event_type}}_image">
-						<p class="festivity_header">{{event.event_date|date:"n/j"}}</p>
-						<p>{{event.event_name}}</p>
+						{% if event.event_date == header_date %}
+							<div class="box festivity_box {{event.event_type}}_image">
+							<p class="festivity_header">Today</p>
+							<p>{{event.event_name}}</p>
+						{% else %}
+							<div class="box festivity_box {{event.event_type}}_image">
+							<p class="festivity_header">{{event.event_date|date:"n/j"}}</p>
+							<p>{{event.event_name}}</p>
+						{% endif %}
 					</div>
 					{% endfor %}
 				</div>
