@@ -59,11 +59,16 @@
 					</div>
 					<div class="box announcement_box out_office">
 						<p class="header">OUT OF OFFICE</p>
-						<ul>
-							{% for ooo in vacation %}
-							<li>{{ooo}}: {{ooo.date_leaving|date:"n/j"}} - {{ooo.date_returning|date:"n/j"}}</li>
-							{% endfor%}
-						</ul>
+						{% if vacation %}
+							<ul>						
+								{% for ooo in vacation %}
+									<li>{{ooo}}: {{ooo.date_leaving|date:"n/j"}} - {{ooo.date_returning|date:"n/j"}}</li>
+								{% endfor%}
+							</ul>
+						{% else %}
+						<p> Whole Team is here! </p>		
+						{% endif %}
+						
 					</div>
 					<div class="box announcement_box time_turner">
 						<p class="header">GAME NIGHT WINNER</p>
