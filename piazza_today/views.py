@@ -5,7 +5,7 @@ from .querys import Clocks
 
 # Create your views here.
 def home_page(request):
-        lunch = Meal.objects.filter(day = date.today).filter(which_meal = 1)[0]
+    lunch = Meal.objects.filter(day = date.today).filter(which_meal = 1)[0]
     dinner = Meal.objects.filter(day = date.today).filter(which_meal = 2)[0]
     lunch_food = Food.objects.filter(meal__meal=str(lunch))[:2]
     dinner_food = Food.objects.filter(meal__meal=str(dinner))[:2]
