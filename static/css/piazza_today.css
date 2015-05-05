@@ -105,6 +105,9 @@ p {
 .festivities_wrapper .festivity_box.welcome_image {
   background-image: url('../img/welcome.png');
 }
+.festivities_wrapper .festivity_box.celebration_image {
+  background-image: url('../img/welcome.png');
+}
 .festivities_wrapper .festivity_box .festivity_header {
   margin-top: 5px;
 }

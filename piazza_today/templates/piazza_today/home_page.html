@@ -35,31 +35,6 @@
 			<div class="section_wrapper clearfix">
 				<div class="festivities_wrapper clearfix">
 					<p class="section_header">FESTIVITIES</p>
-					<div class="box festivity_box birthday_image">
-						<p class="festivity_header">Today</p>
-						<p>Molly's Birthday</p>
-					</div>
-					<div class="box festivity_box anniversary_image">
-						<p class="festivity_header">Today</p>
-						<p>Scott's Anniversary</p>
-					</div>
-					<div class="box festivity_box breakfast_image">
-						<p class="festivity_header">5/5</p>
-						<p>Team Breakfast</p>
-					</div>
-					<div class="box festivity_box frisbee_image">
-						<p class="festivity_header">6/1</p>
-						<p>Team Frisbee</p>
-					</div>
-					<div class="box festivity_box dinner_image">
-						<p class="festivity_header">6/5</p>
-						<p>Team Dinner</p>
-					</div>
-				</div>
-			</div>
-			<div class="section_wrapper clearfix">
-				<div class="festivities_wrapper clearfix">
-					<p class="section_header">FESTIVITIES</p>
 					{% for event in events %}
 						{% if event.event_date == header_date %}
 							<div class="box festivity_box {{event.event_type}}_image">
