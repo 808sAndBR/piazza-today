@@ -1,4 +1,5 @@
 from apscheduler.schedulers.blocking import BlockingScheduler
+from piazza_today.management.commands.zero_scraper import 
 
 sched = BlockingScheduler()
 

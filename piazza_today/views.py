@@ -13,7 +13,7 @@ def home_page(request):
         dinner = Meal.objects.filter(day = date.today).filter(which_meal = 2)[0]
     except IndexError:
         dinner = "No Dinner Today"
-    lunch_food = Food.objects.filter(meal__meal=str(lunch))[:7]
+    lunch_food = Food.objects.order_by('-meal__day').filter(meal__meal=str(lunch))[:7]
     dinner_food = Food.objects.filter(meal__meal=str(dinner))[:7]
     current_time = datetime.now()
     pa_time = Clocks().pa_clock()
@@ -23,9 +23,9 @@ def home_page(request):
     snitch = Snitch.objects.latest('win_date')
     vacation = Offline.objects.filter(date_returning__gte=date.today).filter(date_leaving__lte=date.today).order_by('date_returning')
     gamenight_winner = Gamenight.objects.latest('win_date')
-    return render(request, 'piazza_today/home_page.html', {'pa_time':pa_time, 
-        'lv_time':lv_time, 'header_date':header_date, 'lunch':lunch, 'dinner':dinner, 
-        'lunch_food':lunch_food, 'dinner_food':dinner_food, 'events':events, 'snitch':snitch, 
+    return render(request, 'piazza_today/home_page.html', {'pa_time':pa_time,
+        'lv_time':lv_time, 'header_date':header_date, 'lunch':lunch, 'dinner':dinner,
+        'lunch_food':lunch_food, 'dinner_food':dinner_food, 'events':events, 'snitch':snitch,
         'vacation':vacation, 'gamenight_winner':gamenight_winner})
 
 def dev_page(request):
@@ -41,7 +41,7 @@ def dev_page(request):
     snitch = Snitch.objects.latest('win_date')
     vacation = Offline.objects.filter(date_returning__gte=date.today).filter(date_leaving__lte=date.today)
     gamenight_winner = Gamenight.objects.latest('win_date')
-    return render(request, 'piazza_today/dev_page.html', {'pa_time':pa_time, 
-        'lv_time':lv_time, 'header_date':header_date, 'lunch':lunch, 'dinner':dinner, 
-        'lunch_food':lunch_food, 'dinner_food':dinner_food, 'events':events, 'snitch':snitch, 
+    return render(request, 'piazza_today/dev_page.html', {'pa_time':pa_time,
+        'lv_time':lv_time, 'header_date':header_date, 'lunch':lunch, 'dinner':dinner,
+        'lunch_food':lunch_food, 'dinner_food':dinner_food, 'events':events, 'snitch':snitch,
         'vacation':vacation, 'gamenight_winner':gamenight_winner})
